@@ -1,0 +1,19 @@
+<div *ngIf="book; else nothing " >
+  <h4>
+    Name:
+    {{book.title}}
+  </h4>
+  <p>
+    Author:
+    {{book.author}}
+  </p>
+  <p>
+    Description:
+    {{book.description}}
+  </p>
+  <br>
+  <button (click)="deletePost()">Delete</button></div>
+
+<ng-template #nothing>
+  <p>Nothing to show</p>
+</ng-template>

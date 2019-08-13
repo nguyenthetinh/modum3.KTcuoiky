@@ -1,0 +1,21 @@
+<div><h3>View Book</h3></div>
+<div style="color: deeppink"><a routerLink="/books">Book List</a></div>
+<div *ngIf="book; else nothing">
+  <h4>
+    Name:
+    {{book.title}}
+  </h4>
+  <h4>
+    Author:<br>
+    {{book.author}}
+  </h4>
+  <p>
+    Description:<br>
+    {{book.description}}
+  </p>
+
+</div>
+
+<ng-template #nothing>
+  <p>Nothing to show</p>
+</ng-template>

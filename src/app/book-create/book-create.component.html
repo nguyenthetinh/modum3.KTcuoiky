@@ -1,0 +1,10 @@
+
+<form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+  <h2>Create Book</h2>
+  <div style="color: deeppink"><a routerLink="/books">Book List</a></div>
+  <br><br>
+  Name: <input formControlName="title" [(ngModel)]="book.title" type="text"><br><br>
+  Author: <input formControlName="author" [(ngModel)]="book.author" type="text"><br><br>
+  Description:<input formControlName="description" [(ngModel)]="book.description" type="text"><br><br>
+  <button>Create</button>
+</form>

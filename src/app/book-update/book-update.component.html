@@ -1,0 +1,10 @@
+<form [formGroup]="bookForm" (ngSubmit)="updateBook()">
+  <h2>Update</h2><br>
+  <div style="color: deeppink"><a routerLink="/books">Book List</a></div>
+  <br>
+  Name: <input formControlName="title" [(ngModel)]="book.title" type="text"><br><br>
+  Author: <input formControlName="author" [(ngModel)]="book.author" type="text"><br><br>
+  Description:<input formControlName="description" [(ngModel)]="book.description" type="text"><br><br>
+  <button type="submit">Update</button>
+</form>
+
